@@ -7,5 +7,40 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="colorButtonNormal"></item>-->
+<!--        <item name="colorControlNormal"></item>-->
+                <item name="colorControlActivated">#ffad33</item>
+                <item name="colorControlHighlight">#ffad33</item>
+        <item name="android:textColor">#ffad33</item>
+        <item name="android:textColorPrimary">#ffad33</item>
 
+        <item name="android:textColorSecondary">#ffad33</item>
+
+<!--        <item name="android:windowBackground">@drawable/im</item>-->
+<!--        <item name="android:icon">@drawable/youricon</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:textColorHint">@color/white</item>-->
+    </style>
+    <style name="FirebaseUI.EditText">
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlActivated">#ffad33</item>
+        <item name="colorControlHighlight">#ffad33</item>
+        <item name="android:textColorHint">#ffad33</item>
+        <item name="android:textColor">#ffad33</item>
+    </style>
+
+    <style name="FirebaseUI.Text.TextInputLayout" parent="@style/FirebaseUI.EditText" />
+
+    <style name="FirebaseUI.Text.HintText" parent="@style/FirebaseUI.EditText" />
 </resources>

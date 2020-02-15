@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/map"
-        class= "com.google.android.gms.maps.MapFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace"
         />
 </FrameLayout>

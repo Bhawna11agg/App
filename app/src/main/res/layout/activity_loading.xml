@@ -8,9 +8,37 @@
     android:orientation="vertical"
     android:background="#696969">
 
-    <ImageView
-        android:layout_width="346dp"
-        android:layout_height="328dp"
-        android:src="@drawable/ic_launcher_background" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:layout_gravity="center"
+    android:text="Welcome to Customer Pannel"
+    android:textSize="25dp"
+    android:textColor="#ffad33">
+
+</TextView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/im">
+
+</ImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A one stop solution for"
+    android:layout_gravity="center"
+    android:textColor="#ffad33"
+    android:textSize="20dp">
+</TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="PARKING AND BILLS"
+    android:layout_gravity="center"
+    android:textColor="#ffad33"
+    android:textSize="20dp">
+</TextView>
 
 </LinearLayout>

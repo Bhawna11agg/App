@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".Profile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,28 +51,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:hint="Emai ID"
             android:layout_marginLeft="80dp"
             android:ems="12"
-            android:hint="Email"
             android:inputType="textEmailAddress" />
         <EditText
             android:id="@+id/editText4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:hint="Car Number"
             android:layout_marginLeft="80dp"
             android:ems="12"
-            android:hint="Car Number"
             android:inputType="textEmailAddress" />
         <EditText
             android:id="@+id/editText5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:hint="Car Model"
             android:layout_marginLeft="80dp"
             android:ems="12"
-            android:hint="Car Model"
             android:inputType="textEmailAddress" />
 
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="15dp"
+            android:text="Submit"
+            />
     </LinearLayout>
 </LinearLayout>

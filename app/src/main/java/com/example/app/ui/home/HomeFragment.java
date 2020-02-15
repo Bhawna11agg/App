@@ -82,7 +82,7 @@ public class HomeFragment extends Fragment {
                                 LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
                                 MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("I am here!");
                                 googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-                                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
+                                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16));
                                 googleMap.addMarker(markerOptions);
                                 googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
                                 flag=0;
@@ -94,6 +94,7 @@ public class HomeFragment extends Fragment {
                 }
             };
         });
+
     }
 
     @Override
@@ -107,4 +108,3 @@ public class HomeFragment extends Fragment {
         }
     }
 }
-

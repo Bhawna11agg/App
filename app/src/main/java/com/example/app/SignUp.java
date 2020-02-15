@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class SignUp extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1000;
@@ -38,10 +39,17 @@ public class SignUp extends AppCompatActivity {
                             .createSignInIntentBuilder()
                             .setAvailableProviders(Arrays.asList(
                                     new AuthUI.IdpConfig.EmailBuilder().build(),
-                                    new AuthUI.IdpConfig.PhoneBuilder().build()))
+                                    new AuthUI.IdpConfig.PhoneBuilder().build()
+                                    ))
+                            .setTheme(R.style.LoginTheme)
+                            .setLogo(R.drawable.im)
                             .build(),
+
                     RC_SIGN_IN);
         }
+        Intent intent=new Intent(this,Profile.class);
+        startActivity(intent);
+
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
